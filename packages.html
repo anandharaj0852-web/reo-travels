@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - Reo Travels</title>
+    <meta name="description" content="View affordable tour packages offered by Reo Travels.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Specific package styles */
+        .package-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 1rem 0;
+        }
+
+        .package-features {
+            margin: 1.5rem 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .package-features li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--text-main);
+        }
+
+        .package-features i {
+            color: #10b981;
+            /* check mark color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-plane-departure"></i> Reo<span>Travels</span>
+            </a>
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html" class="active">Packages</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Tour Packages</h1>
+            <p>Carefully crafted packages to fit your budget and schedule. Find the perfect trip.</p>
+        </div>
+    </header>
+
+    <!-- Packages List -->
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <!-- Package 1 -->
+                <div class="card">
+                    <div class="card-img-wrapper" style="height: 200px;">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&q=80&w=800"
+                            alt="Goa" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Goa Tour</h3>
+                        <div class="package-price">₹8000 <span
+                                style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">/ person</span>
+                        </div>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-clock"></i> 3 Days / 2 Nights</span>
+                        </div>
+
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 3-Star Hotel Accommodation</li>
+                            <li><i class="fa-solid fa-check"></i> Daily Breakfast</li>
+                            <li><i class="fa-solid fa-check"></i> Airport Transfers</li>
+                            <li><i class="fa-solid fa-check"></i> Half-day Sightseeing Tour</li>
+                        </ul>
+
+                        <a href="booking.html?package=GoaTour" class="btn btn-primary"
+                            style="width: 100%; text-align: center;">Book Package</a>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="card">
+                    <div class="card-img-wrapper" style="height: 200px;">
+                        <img src="https://images.unsplash.com/photo-1589183657476-cdeb89617b0d?auto=format&fit=crop&q=80&w=800"
+                            alt="Ooty" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ooty Weekend Escape</h3>
+                        <div class="package-price">₹12500 <span
+                                style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">/ person</span>
+                        </div>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-clock"></i> 4 Days / 3 Nights</span>
+                        </div>
+
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> Premium Resort Stay</li>
+                            <li><i class="fa-solid fa-check"></i> Breakfast & Dinner</li>
+                            <li><i class="fa-solid fa-check"></i> Private Cab for Sightseeing</li>
+                            <li><i class="fa-solid fa-check"></i> Tea Factory Tour</li>
+                        </ul>
+
+                        <a href="booking.html?package=OotyEscape" class="btn btn-primary"
+                            style="width: 100%; text-align: center;">Book Package</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="card">
+                    <div class="card-img-wrapper" style="height: 200px;">
+                        <img src="https://images.unsplash.com/photo-1605649487212-4d43bfcb36cc?auto=format&fit=crop&q=80&w=800"
+                            alt="Manali" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Manali Adventure</h3>
+                        <div class="package-price">₹15000 <span
+                                style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">/ person</span>
+                        </div>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-clock"></i> 5 Days / 4 Nights</span>
+                        </div>
+
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> Valley View Rooms</li>
+                            <li><i class="fa-solid fa-check"></i> All Meals Included</li>
+                            <li><i class="fa-solid fa-check"></i> Rohtang Pass Excursion</li>
+                            <li><i class="fa-solid fa-check"></i> Bonfire & Music Night</li>
+                        </ul>
+
+                        <a href="booking.html?package=ManaliAdventure" class="btn btn-primary"
+                            style="width: 100%; text-align: center;">Book Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-plane-departure"></i> Reo<span>Travels</span>
+                    </div>
+                    <p>Your trusted partner for memorable journeys. Let us help you explore the beauty of the world with
+                        ease and comfort.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reo Travels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

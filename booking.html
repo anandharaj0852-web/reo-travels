@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Reo Travels</title>
+    <meta name="description" content="Book your travel easily with Reo Travels.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-plane-departure"></i> Reo<span>Travels</span>
+            </a>
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Book Your Trip</h1>
+            <p>Secure your dream vacation today. Fill in the details below and we will take care of the rest.</p>
+        </div>
+    </header>
+
+    <!-- Booking Form Area -->
+    <section class="section">
+        <div class="container">
+            <div class="form-card">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Booking Details</h2>
+                <form action="#" method="POST" id="bookingForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 98765 43210"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="destination">Destination</label>
+                            <select id="destination" name="destination" class="form-control" required>
+                                <option value="" disabled selected>Select Destination</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Ooty">Ooty</option>
+                                <option value="Manali">Manali</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Andaman">Andaman</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="date">Travel Date</label>
+                            <input type="date" id="date" name="date" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="travelers">Number of Travelers</label>
+                            <input type="number" id="travelers" name="travelers" class="form-control" min="1" max="20"
+                                placeholder="e.g. 2" required>
+                        </div>
+
+                        <div class="form-group full" style="text-align: center; margin-top: 1rem;">
+                            <button type="submit" class="btn btn-primary"
+                                style="padding: 1rem 3rem; font-size: 1.1rem;">Confirm Booking</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-plane-departure"></i> Reo<span>Travels</span>
+                    </div>
+                    <p>Your trusted partner for memorable journeys. Let us help you explore the beauty of the world with
+                        ease and comfort.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reo Travels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Pre-fill destination from URL params
+        const urlParams = new URLSearchParams(window.location.search);
+        const destParam = urlParams.get('dest');
+        if (destParam) {
+            const select = document.getElementById('destination');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value === destParam) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
